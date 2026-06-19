@@ -1,0 +1,14 @@
+# Copyright 2026 The MathWorks, Inc.
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: product-specific
+version: "1.0"
+human-description: Compute S-parameters, insertion loss, fields, and currents for RF PCB performance validation.
+matlab-release: ">=R2025a"
+requires-tools:
+  - evaluate_matlab_code
+  - check_matlab_code
+requires-skills: []
+requires-products:
+  - RF PCB Toolbox
+toolkit: matlab-agentic-toolkit

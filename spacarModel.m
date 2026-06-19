@@ -6,8 +6,8 @@ function delGHI = spacarModel(p, delB, delD)
 
 %% ---- Section 1: Geometry (from deliverable f) -------------------------
 w=15; t=0.2; emod=200; Lspring=88; Ld=Lspring*sind(45);
-Lxx=364512.64e-9; Lxy=6298.21e-9;  Lxz=-30369.95e-9;
-Lyy=662464.35e-9; Lyz=-1381.26e-9; Lzz=884574.96e-9;
+Lxx=380960e-9; Lxy=-7093.72e-9;  Lxz=-33621.63e-9;
+Lyy=727063.32e-9; Lyz=1241.18e-9; Lzz=1065267.51e-9;
 
 %% ---- Section 2: Nodes (mm -> m) ---------------------------------------
 nodes = 1e-3 * [
@@ -19,7 +19,7 @@ nodes = 1e-3 * [
      Ld        w*6.25      0      ;  % 6  fixed - frame reference
      Ld        w*6.25      Ld     ;  % 7
      87.56     93.66       Ld     ;  % 8  actuator node
-     37.30     93.37       64.88  ;  % 9  mirror CoM
+     36.33     94.07       66.97  ;  % 9  mirror CoM
      Ld/2      w*6.25      Ld/2   ;  % 10
     -31.26     86.17       79.51 ];  % 11 sensor node
 
@@ -29,7 +29,7 @@ elements = [1 2;3 4;5 6;7 5;2 7;4 7;8 7;9 7;10 7;5 11];
 %% ---- Section 4: Node properties ---------------------------------------
 clear nprops
 nprops(1).fix=true; nprops(3).fix=true; nprops(6).fix=true;
-nprops(9).mass=0.247;
+nprops(9).mass=0.31385;
 nprops(9).mominertia=[Lxx Lxy Lxz Lyy Lyz Lzz];
 % Spacar orders outputs by node number: node 8 < node 11
 % => output 1 = VCM velocity (node 8), output 2 = sensor pos (node 11)

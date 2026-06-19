@@ -1,0 +1,13 @@
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: product-specific
+version: "1.0"
+human-description: Connect MATLAB to Databricks using JDBC drivers via Database Toolbox.
+matlab-release: ">=R2022b"
+requires-tools:
+  - evaluate_matlab_code
+requires-skills: []
+requires-products:
+  - Database Toolbox
+toolkit: matlab-agentic-toolkit
+# Copyright 2026 The MathWorks, Inc.

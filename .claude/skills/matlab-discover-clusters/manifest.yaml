@@ -1,0 +1,13 @@
+# Copyright 2026 The MathWorks, Inc.
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.0"
+human-description: Discover parallel computing clusters and manage cluster profiles.
+matlab-release: ">=R2022b"
+requires-tools:
+  - evaluate_matlab_code
+requires-skills: []
+requires-products:
+  - Parallel Computing Toolbox
+toolkit: matlab-agentic-toolkit

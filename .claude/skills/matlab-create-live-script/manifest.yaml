@@ -1,0 +1,14 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for creating-live-scripts
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "2.1"
+human-description: Create plain-text MATLAB Live Scripts with rich text, LaTeX equations, and inline figures.
+matlab-release: ">=R2025a"
+requires-tools:
+  - evaluate_matlab_code
+  - check_matlab_code
+requires-skills: []
+requires-products: []
+toolkit: matlab-agentic-toolkit
