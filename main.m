@@ -15,10 +15,7 @@ addpath('spacar\spalight-1.38');
 p = system_parameters();
 
 %% Deliverable b: nominal plant sizing
-ref_nom = get_reference_peaks(p.spec.driving_speed_nom_mps, ...
-                               p.spec.weeding_time_s, ...
-                               p.spec.return_time_s, ...
-                               1e-4);
+load('ref_nom.mat','ref_nom')
 delB = nominal_plant_sizing(p, ref_nom);
 
 p.mech.r_arm_m       = delB.r_arm_m;
